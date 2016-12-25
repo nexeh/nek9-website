@@ -24,7 +24,6 @@
 						<?php get_sidebar( 'footer-left' ); ?>
 					</div>
 				</div>
-				
 				<div class="col-md-4">
 					<div class="mid-footer">
 						<?php get_sidebar( 'footer-mid' ); ?>					
@@ -45,8 +44,7 @@
 		<div class="row">
 			<div class="footer-details-container">
 				<div class="copyright-container">
-
-					<div class="col-xs-12 col-md-6 col-sm-6">
+					<div class="col-xs-12 col-md-12 col-sm-12">
 						<?php 
 							$footer_copyright_text = get_theme_mod( 'footer_copyright_text', '' );
 							if( ! empty( $footer_copyright_text ) ) {
@@ -55,13 +53,7 @@
 								$site_link = '<a href="' . esc_url( home_url( '/' ) ) .'" title="' . esc_attr( get_bloginfo( 'name' ) ) . '" rel="home">' . esc_attr( get_bloginfo( 'name' ) ) . '</a>';
 								printf( __( 'Copyright &copy; 2017 %1$s %2$s.', 'nek9sar' ), date( 'Y' ), $site_link );
 							} ?>
-					</div>
-					<div class="col-xs-12 col-md-6 col-sm-6 fr">
-						<div class="credit-container">
-							
-						</div>
-					</div>
-					
+					</div>					
 				</div><!-- .footer-details-container -->
 			</div><!-- .row -->
 			</div><!-- .container -->

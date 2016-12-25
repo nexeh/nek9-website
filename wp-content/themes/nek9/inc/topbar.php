@@ -24,12 +24,19 @@
 					} 
 				?>
 
+				<?php 
+					$email_text = get_theme_mod( 'address_text', '' );
+					$email_address = get_theme_mod( 'address', '' );
+					if( ! empty( $email_text ) || ! empty( $email_address ) ) { ?>
+						<div class="topbar-icon"><i class="fa fa-envelope"></i></div><?php echo esc_html( $email_text ); ?>
+				<?php } ?>
+
 			</div>
 			<div class="col-md-6 col-xs-12 col-sm-12">
 
 			<?php
 			if ( get_theme_mod( 'display_social_icons', '1' ) == '1' ) : ?>
-				<div class="th-social-area">
+				<div class="social-area">
 				<?php 
 					$social_text = get_theme_mod( 'social_media_text', '' ); 
 					if( ! empty( $social_text ) ) {
@@ -37,28 +44,28 @@
 					}
 				?>
 				<?php if ( get_theme_mod( 'facebook_url','' ) ) : ?>
-					<a href="<?php echo esc_url( get_theme_mod( 'facebook_url','') ) ?>" target="_blank"><div class="th-social-icon facebook"><i class="fa fa-facebook"></i></div></a>
+					<a href="<?php echo esc_url( get_theme_mod( 'facebook_url','') ) ?>" target="_blank"><div class="social-icon facebook"><i class="fa fa-facebook"></i></div></a>
 				<?php endif; ?>
 				<?php if ( get_theme_mod( 'twitter_url','' ) ) : ?>
-					<a href="<?php echo esc_url( get_theme_mod( 'twitter_url','') ) ?>" target="_blank"><div class="th-social-icon twitter"><i class="fa fa-twitter"></i></div></a>
+					<a href="<?php echo esc_url( get_theme_mod( 'twitter_url','') ) ?>" target="_blank"><div class="social-icon twitter"><i class="fa fa-twitter"></i></div></a>
 				<?php endif; ?>
 				<?php if ( get_theme_mod( 'googleplus_url','' ) ) : ?>
-					<a href="<?php echo esc_url( get_theme_mod( 'googleplus_url','') ) ?>" target="_blank"><div class="th-social-icon googleplus"><i class="fa fa-google-plus"></i></div></a>
+					<a href="<?php echo esc_url( get_theme_mod( 'googleplus_url','') ) ?>" target="_blank"><div class="social-icon googleplus"><i class="fa fa-google-plus"></i></div></a>
 				<?php endif; ?>
 				<?php if ( get_theme_mod( 'linkedin_url','' ) ) : ?>
-					<a href="<?php echo esc_url( get_theme_mod( 'linkedin_url','') ) ?>" target="_blank"><div class="th-social-icon linkedin"><i class="fa fa-linkedin"></i></div></a>
+					<a href="<?php echo esc_url( get_theme_mod( 'linkedin_url','') ) ?>" target="_blank"><div class="social-icon linkedin"><i class="fa fa-linkedin"></i></div></a>
 				<?php endif; ?>
 				<?php if ( get_theme_mod( 'youtube_url','' ) ) : ?>
-					<a href="<?php echo esc_url( get_theme_mod( 'youtube_url','') ) ?>" target="_blank"><div class="th-social-icon youtube"><i class="fa fa-youtube"></i></div></a>
+					<a href="<?php echo esc_url( get_theme_mod( 'youtube_url','') ) ?>" target="_blank"><div class="social-icon youtube"><i class="fa fa-youtube"></i></div></a>
 				<?php endif; ?>
 				<?php if ( get_theme_mod( 'dribbble_url','' ) ) : ?>
-					<a href="<?php echo esc_url( get_theme_mod( 'dribbble_url','') ) ?>" target="_blank"><div class="th-social-icon dribbble"><i class="fa fa-dribbble"></i></div></a>
+					<a href="<?php echo esc_url( get_theme_mod( 'dribbble_url','') ) ?>" target="_blank"><div class="social-icon dribbble"><i class="fa fa-dribbble"></i></div></a>
 				<?php endif; ?>
 				<?php if ( get_theme_mod( 'github_url','' ) ) : ?>
-					<a href="<?php echo esc_url( get_theme_mod( 'github_url','') ) ?>" target="_blank"><div class="th-social-icon github"><i class="fa fa-github"></i></div></a>
+					<a href="<?php echo esc_url( get_theme_mod( 'github_url','') ) ?>" target="_blank"><div class="social-icon github"><i class="fa fa-github"></i></div></a>
 				<?php endif; ?>
 				<?php if ( get_theme_mod( 'flickr_url','' ) ) : ?>
-					<a href="<?php echo esc_url( get_theme_mod( 'flickr_url','') ) ?>" target="_blank"><div class="th-social-icon flickr"><i class="fa fa-flickr"></i></div></a>
+					<a href="<?php echo esc_url( get_theme_mod( 'flickr_url','') ) ?>" target="_blank"><div class="social-icon flickr"><i class="fa fa-flickr"></i></div></a>
 				<?php endif; ?>
 				</div>
 				

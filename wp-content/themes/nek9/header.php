@@ -29,49 +29,39 @@
 		} ?>
 		<div class="container">
 			<div class="row">
-				<div class="col-md-4 col-xs-12 col-lg-4">
+				<div class="col-md-12 col-xs-12 col-lg-12">
 					<div class="site-branding">
-						<?php 
-							$site_title_option = get_theme_mod( 'site_title_option', 'text_only' ); 
-							$site_logo = get_theme_mod( 'site_logo', '' );
-						?>
-						<?php if (  $site_title_option == 'logo_only'  && ! empty( $site_logo ) ) { ?>
 							<div class="site-logo-image">
-								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo esc_url($site_logo); ?>" alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"></a>
+								<a href="<?php echo esc_url( home_url( '/' ) ); ?>" 
+									<img src="<?php echo esc_url($site_logo); ?>" 
+									alt="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>"/>
+								</a>
 							</div>
-						<?php } ?>
-						<?php if ( $site_title_option == 'text_only' ) { ?>
 							<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 							<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2>
-						<?php } ?>
-					</div>
-				</div><!-- .col-md-4 .col-xs-12 .col-lg-4 -->
-
-				<div class="col-md-8 col-xs-12 col-lg-8">
+					</div> <!-- .site-branding -->
+				</div><!-- .col-md-6 .col-xs-12 .col-lg-6 -->
+			</div><!-- .row -->
+			<div class="row">
+				<div class="col-md-12 col-xs-12 col-lg-12">
 					<nav id="site-navigation" class="main-navigation" role="navigation">
 						<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
 					</nav><!-- #site-navigation -->
 					<a href="#" class="navbutton" id="main-nav-button">Main Menu</a>
 					<div class="responsive-mainnav"></div>
-				</div><!-- .col-md-8 .col-xs-12 .col-lg-8 -->
+				</div><!-- .col-md-6 .col-xs-12 .col-lg-6 -->
 			</div><!-- .row -->
 		</div><!-- container -->
 	</header><!-- #masthead -->
 	
 	<?php if ( get_header_image() ) : ?>
-		<figure class="thbusiness-header-image">
+		<figure class="nek9sar-header-image">
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
 				<img src="<?php header_image(); ?>" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="">
 			</a>
 		</figure>
 	<?php endif; // End header image check. ?>
 	
-	<?php
-	   	if( get_theme_mod( 'display_slider', '1' ) == '1' ) { 
-			if ( is_front_page() ) {
-				nek9sar_homepage_slider();
-			}
-	 } ?>
 
 	</div><!-- .row -->
 	</div><!-- .container-fluid -->

@@ -11,7 +11,7 @@
  */
 
 get_header(); ?>
-<div class="col-xs-12 col-sm-12 col-md-8">
+<div class="col-xs-12 col-sm-12 col-md-9">
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
@@ -32,7 +32,7 @@ get_header(); ?>
 	</div><!-- #primary -->
 
 </div><!-- .col-xs-12 col-sm-12 col-md-8 -->
-<div class="col-xs-12 col-sm-6 col-md-4">
+<div class="col-xs-12 col-sm-6 col-md-3">
 	<?php get_sidebar(); ?>
 </div><!-- .col-xs-12 .col-sm-6 .col-md-4 -->
 <?php get_footer(); ?>
