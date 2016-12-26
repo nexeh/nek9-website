@@ -100,7 +100,7 @@ a:focus {
 a:hover,
 a:active {
 	color: #eb5937;
-	text-decoration: none;
+	text-decoration: underline;
 	outline: 0;
 }
 a img {
@@ -380,10 +380,13 @@ a {
 a:visited {
 	color: #777;
 }
-a:hover,
-a:focus,
+
+
 a:active {
 	color: #eb5937;
+}
+a:hover, a:focus {
+	text-decoration: underline;
 }
 
 /*--------------------------------------------------------------
