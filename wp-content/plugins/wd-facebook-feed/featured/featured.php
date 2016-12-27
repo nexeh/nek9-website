@@ -133,6 +133,13 @@ function spider_featured($current_plugin = '') {
           'content'  => 'Google Maps WD is an intuitive tool for creating Google maps with advanced markers, custom layers and overlays for   your website.',
           'href'     => 'https://web-dorado.com/products/wordpress-google-maps-plugin.html'
       ),
+      "ad-manager-wd"       => array(
+        'title'   => 'AD Manager WD',
+        'text'    => 'AD Manager WD plugin',
+        'content' => 'Ad Manager WD is functional and comprehensive plugin which is created to help you monetize your WordPress website with ads.',
+        'href'    => 'https://web-dorado.com/products/wordpress-ad-manager-wd.html'
+      ),
+
       "facebook-feed-wd" => array(
           'title'    => '',
           'text'     => '',

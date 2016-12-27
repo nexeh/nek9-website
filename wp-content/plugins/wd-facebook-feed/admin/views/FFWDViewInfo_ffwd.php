@@ -930,7 +930,9 @@ class FFWDViewInfo_ffwd
                                             <?php
                                             foreach ($theme_rows as $theme_row) {
                                                 ?>
-                                                <option <?php echo ($theme_row->default_theme) ? 'selected="selected"' : ''; ?>
+                                                <option <?php
+                                                ($row->theme!='') ? selected( $theme_row->id, $row->theme ) : selected( $theme_row->id, $theme_row->default_theme );
+                                                ?>
                                                     value="<?php echo $theme_row->id; ?>"><?php echo $theme_row->name; ?></option>
                                                 <?php
                                             }

@@ -19,22 +19,8 @@
 		<div class="row">
 		<?php if ( is_active_sidebar( 'footer-left' ) || is_active_sidebar( 'footer-mid' ) || is_active_sidebar( 'footer-right' ) ) : ?>
 			<div class="footer-widget-area">
-				<div class="col-md-4">
-					<div class="left-footer">
-						<?php get_sidebar( 'footer-left' ); ?>
-					</div>
-				</div>
-				
-				<div class="col-md-4">
-					<div class="mid-footer">
-						<?php get_sidebar( 'footer-mid' ); ?>					
-					</div>
-				</div>
+				<div class="col-xs-12 col-md-6 col-sm-6">
 
-				<div class="col-md-4">
-					<div class="right-footer">
-						<?php get_sidebar( 'footer-right' ); ?>					
-					</div>
 				</div>						
 			</div><!-- .footer-widget-area -->
 		<?php endif; ?>

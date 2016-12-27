@@ -3,8 +3,8 @@ Contributors: webdorado
 Donate link: https://web-dorado.com/products/wordpress-facebook-feed-plugin.html
 Tags: customizable, facebook, facebook events, facebook feed, facebook group, facebook like box, facebook likes, facebook page, facebook photos, facebook plugin, facebook posts, likebox
 Requires at least: 3.4
-Tested up to: 4.6
-Stable tag: 1.0.12
+Tested up to: 4.7
+Stable tag: 1.0.13
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -65,6 +65,10 @@ Upgrade to [Facebook Feed Pro](https://web-dorado.com/products/wordpress-faceboo
 *   Social sharing for feed to Google Plus, Twitter and Facebook          
 
 == Changelog ==
+
+= 1.0.13 =
+* Changed: Featured plugins      
+* Fixed: Bug with albums    
 
 = 1.0.12 =
 * Fixed: Changes in database after plugin version update via FTP or AJAX requests with silent activation      
