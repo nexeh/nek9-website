@@ -1,11 +1,16 @@
-<?php get_header(); ?>		
-<div class="row">
-	<div class="col-xs-12 col-sm-12 col-md-8">
-		<main id="main" class="site-main" role="main">
-			<?php while ( have_posts() ) : the_post(); ?>
-				<?php get_template_part( 'content', 'single' ); ?>
-			<?php endwhile; ?>
-		</main>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<header class="page-header">
+		<?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
+	</header>
+	<div class="entry-content">
+		<?php the_content(); ?>
+		<?php
+			wp_link_pages( array(
+				'before' => '<div class="page-links">' . __( 'Pages:', 'nek9sar' ),
+				'after'  => '</div>',
+				'link_before' => '<span>',
+				'link_after' => '</span>',
+			) );
+		?>
 	</div>
-</div>
-<?php get_footer(); ?>
+</article>

@@ -1,19 +1,19 @@
+
+<!--Layout for the Default Page-->
+
 <?php get_header(); ?>
+<div class="col-xs-12 col-sm-12 col-md-12">
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 
-	<div class="row">
+		<?php while ( have_posts() ) : the_post(); ?>
 
-		<div class="col-sm-12">
+			<?php get_template_part( 'content', 'page' ); ?>
 
-			<?php 
-				if ( have_posts() ) : while ( have_posts() ) : the_post();
-  	
-					get_template_part( 'content', get_post_format() );
-  
-				endwhile; endif; 
-			?>
+		<?php endwhile; // end of the loop. ?>
 
-		</div> <!-- /.col -->
+		</main><!-- #main -->
+	</div><!-- #primary -->
 
-	</div> <!-- /.row -->
-
+</div><!-- .col-xs-12 col-sm-6 col-md-8 -->
 <?php get_footer(); ?>

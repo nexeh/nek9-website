@@ -59,3 +59,40 @@ function admin_header_image() {
 	</div>
 <?php
 }
+
+add_action( 'init', 'cptui_register_my_cpts_members' );
+function cptui_register_my_cpts_members() {
+	$labels = array(
+		"name" => __( 'Members', '' ),
+		"singular_name" => __( 'Member', '' ),
+		);
+
+	$args = array(
+		"label" => __( 'Members', '' ),
+		"labels" => $labels,
+		"description" => "",
+		"public" => true,
+		"publicly_queryable" => true,
+		"show_ui" => true,
+		"show_in_rest" => false,
+		"rest_base" => "",
+		"has_archive" => false,
+		"show_in_menu" => true,
+				"exclude_from_search" => false,
+		"capability_type" => "post",
+		"map_meta_cap" => true,
+		"hierarchical" => false,
+		"rewrite" => array( "slug" => "members", "with_front" => true ),
+		"query_var" => true,
+		"menu_icon" => "http://localhost:8888/wp-content/uploads/2016/12/NEK9_favicon.png",
+		"supports" => array( "title", "editor", "thumbnail",),					);
+	register_post_type( "members", $args );
+
+// End of cptui_register_my_cpts_members()
+}
+
+// Add Thumbnail Support
+add_theme_support('post-thumbnails');
+set_post_thumbnail_size( 300, 200, true );
+
+
