@@ -1,4 +1,4 @@
-
+<!--Custom Page for the list of NEK9 Members -->
 <?php get_header(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<header class="page-header">
@@ -44,7 +44,7 @@
 			<?php endwhile; ?>
 		</main>
 	</div>
-	</article>
+</article>
 
 
 	<?php get_footer(); ?>

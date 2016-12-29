@@ -1,5 +1,40 @@
 <?php
 
+add_theme_support('excerpts', 'post');
+add_theme_support( 'automatic-feed-links' );
+add_theme_support( 'title-tag' );
+add_theme_support( 'custom-logo', array(
+	'height'      => 240,
+	'width'       => 240,
+	'flex-height' => true,
+) );
+add_theme_support( 'post-thumbnails' );
+set_post_thumbnail_size( 1200, 9999 );
+register_nav_menus( array(
+	'primary' => __( 'Primary Menu', 'nek9sar' ),
+	'social'  => __( 'Social Links Menu', 'nek9sar' ),
+) );
+add_theme_support( 'html5', array(
+	'search-form',
+	'comment-form',
+	'comment-list',
+	'gallery',
+	'caption',
+) );
+add_theme_support( 'post-formats', array(
+	'aside',
+	'image',
+	'video',
+	'quote',
+	'link',
+	'gallery',
+	'status',
+	'audio',
+	'chat',
+) );
+// Indicate widget sidebars can use selective refresh in the Customizer.
+add_theme_support( 'customize-selective-refresh-widgets' );
+
 // Add scripts and stylesheets
 function startwordpress_scripts() {
 	wp_enqueue_style( 'bootstrap', get_template_directory_uri() . '/css/bootstrap.min.css', array(), '3.3.6' );
@@ -91,12 +126,6 @@ function cptui_register_my_cpts_members() {
 // End of cptui_register_my_cpts_members()
 }
 
-// Add Thumbnail Support
-add_theme_support('post-thumbnails');
-set_post_thumbnail_size( 300, 200, true );
-
-// Add Thumbnail Support
-add_theme_support('excerpts', 'post');
 
 
 
