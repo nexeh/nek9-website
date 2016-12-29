@@ -1,10 +1,10 @@
 
     </div> <!-- /.container -->
-	<footer class="site-footer">
-		<div class="col-xs-12">
-			<p>&copy; 2017 New England K9 Search &amp; Rescue</p>
-		</div>
-	</footer>
-	<?php wp_footer(); ?> 
+
+    <footer class="footer">
+      <div class="container">
+        <p class="text-muted">Place sticky footer content here.</p>
+      </div>
+    </footer>
   </body>
 </html>

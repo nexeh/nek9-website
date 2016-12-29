@@ -8,19 +8,21 @@
  * @subpackage NEK9
  */
 ?>
+<div class="container-fluid">
+	<div class="panel panel-default">
+	  <div class="panel-heading">
+			<?php
+				if ( is_single() ) :
+					the_title( );
+				else :
+					the_title();
+				endif;
+			?>
+		</div>
+	  <div class="panel-body">
+	    <?php the_content(); ?>
+	  </div>
+	 </div>
+ </div>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header>
-		<?php
-			if ( is_single() ) :
-				the_title( );
-			else :
-				the_title();
-			endif;
-		?>
-	</header>
-	<div class="entry-content">
-		<?php the_content(); ?>
-	</div>
-	<footer></footer>
-</article>
+
