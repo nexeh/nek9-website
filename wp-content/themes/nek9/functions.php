@@ -15,9 +15,6 @@ register_nav_menus( array(
 	'social'  => __( 'Social Links Menu', 'nek9sar' ),
 ) );
 add_theme_support( 'html5', array(
-	'search-form',
-	'comment-form',
-	'comment-list',
 	'gallery',
 	'caption',
 ) );
