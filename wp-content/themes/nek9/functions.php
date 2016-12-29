@@ -95,4 +95,8 @@ function cptui_register_my_cpts_members() {
 add_theme_support('post-thumbnails');
 set_post_thumbnail_size( 300, 200, true );
 
+// Add Thumbnail Support
+add_theme_support('excerpts', 'post');
+
+
 

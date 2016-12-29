@@ -1,28 +1,19 @@
 <?php get_header(); ?>
+		
+<header class="page-header">
+	<h1 class="page-title"><?php single_post_title(); ?></h1>
+</header>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-
-		<?php if ( have_posts() ) : ?>
-
-			<?php if ( is_home() && ! is_front_page() ) : ?>
-				<header>
-					<h1 class="page-title screen-reader-text"><?php single_post_title(); ?></h1>
-				</header>
-			<?php endif; ?>
-
+<div id="primary" class="content-area">
+	<main id="main" class="site-main" role="main">
 			<?php
-			// Start the loop.
-			while ( have_posts() ) : the_post();
-				get_template_part( 'content', get_post_format() );
-			endwhile;
-		else :
-			get_template_part( 'content', 'none' );
+			if ( have_posts() ) :
+				while ( have_posts() ) : the_post();
+					get_template_part( 'content', get_post_format());
+				endwhile;
+			endif;
+			?>
+	</main>
+</div>
 
-		endif;
-		?>
-
-		</main>
-	</div>
-
-<?php get_footer(); ?>
+<?php get_footer();
