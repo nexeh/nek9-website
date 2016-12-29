@@ -21,18 +21,15 @@ get_header(); ?>
 		<?php if ( have_posts() ) : ?>
 			<?php if ( is_home() && ! is_front_page() ) : ?>
 				<header>
-					<h1><?php single_post_title(); ?></h1>
+					<?php single_post_title(); ?>
 				</header>
 			<?php endif; ?>
 
 			<?php
-
 			while ( have_posts() ) : the_post();
 				get_template_part( 'content', get_post_format() );
 			endwhile;
-
-		endif;
-		?>
+		endif; ?>
 
 		</main>
 	</div>

@@ -16,5 +16,4 @@ if ( has_nav_menu( 'primary' ) || has_nav_menu( 'social' ) || is_active_sidebar(
 		<?php endif; ?>
 
 	</div><!-- .secondary -->
-
 <?php endif; ?>

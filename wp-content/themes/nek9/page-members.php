@@ -1,8 +1,8 @@
 <!--Custom Page for the list of NEK9 Members -->
 <?php get_header(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="page-header">
-		<?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
+	<header>
+		<?php the_title(); ?>
 	</header>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
@@ -26,7 +26,7 @@
 							<div class="col-sm-10">
 								<div class="row">
 									<div class="col-sm-12">
-										<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+										<?php the_title(); ?>
 									</div>
 								</div>
 								<div class="row">
