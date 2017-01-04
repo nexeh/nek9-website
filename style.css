@@ -48,15 +48,6 @@
   font-size: 32px;
   font-weight: bold;
   padding: 15px;
-  text-shadow:
-    1px 1px 2px #fff,
-    /* Simulated effect for Firefox and Opera
-       and nice enhancement for WebKit */
-   -1px -1px 0 #fff,
-    1px -1px 0 #fff,
-   -1px  1px 0 #fff,
-    1px  1px 0 #fff;
-
 }
 
 .header-container .navButtons {
@@ -99,19 +90,21 @@ html, body {
    -1px  1px 0 #000,
     1px  1px 0 #000;
 }
-/* padded section */
+
 .pad-section {
   padding: 50px 0;
 }
+
 .pad-section img {
   width: 100%;
 }
-/* vertical-centered text */
+
 .text-vcenter {
   display: table-cell;
   text-align: center;
   vertical-align: middle;
 }
+
 .text-vcenter h1 {
   font-size: 4.5em;
   font-weight: 700;
@@ -120,26 +113,30 @@ html, body {
 }
 
 .parallax-section {
-  /*margin-top: 40px;*/
   border-bottom: white 5px solid;
-}
-
-.seperator {
-  background-image: url(images/seperator.jpg);
-  background-repeat: repeat-X;
   display: table;
-  height: 40px;
   position: relative;
   width: 100%;
+  color: white;
+  font-weight: bold;
 }
 
-/* additional sections */
+.parallax-content {
+  padding: 25px;
+}
+
+.darken-background {
+  background-color: rgba(0, 0, 0, 0.5);
+  height: 100%;
+}
+
+.fill-height {
+  height: 100%;
+}
+
 #home {
   background: url(images/home.jpg) no-repeat center center fixed;
-  display: table;
   height: 1000px;
-  position: relative;
-  width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -148,22 +145,16 @@ html, body {
 
 #mission {
   background: url(images/jackson.jpg) no-repeat center center fixed;
-  display: table;
   height: 750px;
-  position: relative;
-  width: 100%;
+  font-size: 32px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: white;
+}
 
+#mission .parallax-content {
   padding-top: 250px;
-
-  color: white;
-  font-size: 32px;
-  font-weight: bold;
-
 }
 
 #mission h2 {
@@ -172,26 +163,18 @@ html, body {
 
 #skills {
   background: url(images/teambase.jpg) no-repeat center center fixed;
-  display: table;
   height: 500px;
-  position: relative;
-  width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: white;
 }
 
 #about {
   background: url(images/monadnock.jpg) no-repeat center center fixed;
-  display: table;
   height: 500px;
-  position: relative;
-  width: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  color: white;
 }
