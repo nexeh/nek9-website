@@ -178,3 +178,21 @@ html, body {
   -o-background-size: cover;
   background-size: cover;
 }
+
+#outreach {
+  background: url(images/outreach.jpg) no-repeat center center fixed;
+  height: 500px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#support {
+  background: url(images/haven.png) no-repeat center center fixed;
+  height: 500px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
