@@ -34,7 +34,19 @@
 
 .footer-container {
 	background-color: black;
-  color: white;
+  color: #c5c4c3;
+}
+
+.footer-container ul {
+  padding: 0px;
+}
+
+.footer-container li {
+  list-style-type: none;
+}
+
+.footer-container a {
+  color: inherit;
 }
 
 .nek9 {
