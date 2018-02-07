@@ -122,7 +122,7 @@ html, body {
   bottom: 0;
   padding-top: 20px;
   width: 100%;
-  height: 60px;
+  height: 200px;
   background-color: #000;
 }
 
@@ -180,7 +180,7 @@ html, body {
 }
 
 /* additional sections */
-#home {
+.home {
   background: url(images/home.jpg) no-repeat center center fixed;
   display: table;
   height: 1000px;
@@ -192,7 +192,7 @@ html, body {
   background-size: cover;
 }
 
-#mission {
+.mission {
   background: url(images/jackson.jpg) no-repeat center center fixed;
   display: table;
   height: 750px;
@@ -212,11 +212,11 @@ html, body {
 
 }
 
-#mission h2 {
+.mission h2 {
   font-size: 42px;
 }
 
-#skills {
+.skills {
   background: url(images/teambase.jpg) no-repeat center center fixed;
   display: table;
   height: 500px;
@@ -229,7 +229,7 @@ html, body {
   color: white;
 }
 
-#about {
+.about {
   background: url(images/monadnock.jpg) no-repeat center center fixed;
   display: table;
   height: 500px;

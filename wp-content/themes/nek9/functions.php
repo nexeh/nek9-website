@@ -72,7 +72,6 @@ function custom_header_setup() {
 		'width'                  => 1500,
 		'height'                 => 300,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'header_style',
 		'admin-head-callback'    => 'admin_header_style',
 		'admin-preview-callback' => 'admin_header_image',
 	) ) );

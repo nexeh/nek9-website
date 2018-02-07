@@ -18,9 +18,13 @@
 	<div class="site-container">
 		<div class="header-container row">
 			<div class="header-content">
-				<div class="name"><?php the_custom_logo(); ?>New England K9 Search and Rescue</div>
+				<div class="name"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/NEK9_logo_red.png"> New England K9 Search and Rescue</div>
 				<div class="navButtons">
-					<?php wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+					<?php wp_nav_menu( array( 
+						'theme_location' => 'primary', 
+						'menu_class'=> '' 
+					) ); ?>
+
 				</div>
 			</div>
 		</div>
