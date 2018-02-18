@@ -15,33 +15,27 @@
 </head>
 
 <body>
-	<div class="site-container">
-		<div class="header-container row">
-			<div class="header-content">
-				<div class="name">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/NEK9_logo_red.png"/>
-				</div>
-				<span class="visible-xs name" >NEK9</span>
-				<button type="button" class="btn btn-default btn-lg visible-xs">
-				  Menu
-				</button>
-				<span class="hidden-xs name" >New England K9 Search and Rescue</span>
-				<div class="navButtons hidden-xs">
-					<?php wp_nav_menu( array( 
+	<nav class="navbar navbar-default header-container">
+	  <div class="container-fluid">
+	    <div class="navbar-header header-content">
+	      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <div class="name hidden-xs"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/NEK9_logo_red.png"/>New England K9 Search and Rescue</div>
+		  <div class="name visible-xs"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/NEK9_logo_red.png"/>NEK9</div>
+	    </div>
+
+	    <div class="collapse navbar-collapse navButtons" id="bs-example-navbar-collapse-1">
+	      <ul class="nav navbar-nav navbar-right">
+	        <?php wp_nav_menu( array( 
 						'theme_location' => 'primary', 
-						'menu_class'=> '' 
+						'menu_class'=> 'nav navbar-nav navbar-right' 
 					) ); ?>
-
-				</div>
-			</div>
-		</div>
-
-
-
-
-
-
-
-		
-
-
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+	<div class="site-container">
