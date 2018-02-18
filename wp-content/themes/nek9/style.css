@@ -55,6 +55,7 @@ html, body {
     margin: 0;
     z-index: 1;
     border-bottom: white 5px solid;
+    overflow: hidden;
 }
 
 .header-container img {
@@ -168,6 +169,8 @@ html, body {
 .parallax-section {
   /*margin-top: 40px;*/
   border-bottom: white 5px solid;
+  background-color: #f42a2e;
+  color: white;
 }
 
 .seperator {
@@ -203,11 +206,9 @@ html, body {
   -o-background-size: cover;
   background-size: cover;
   color: white;
-
   padding-top: 250px;
-
   color: white;
-  font-size: 32px;
+  font-size: 1.8em;
   font-weight: bold;
 
 }

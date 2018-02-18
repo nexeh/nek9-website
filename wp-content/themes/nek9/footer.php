@@ -13,11 +13,11 @@
 				Pager: 877-730-2769 <br/>
 			</div>
 
-			<div class="col-sm-4">
+			<div class="col-sm-4 hidden-xs">
 
 				To provide, without cost, trained search-and-rescue personnel and K-9’s to the law enforcement agencies of Vermont and New Hampshire to assist them in their efforts to locate the lost and missing.
 			</div>
-			<div class="col-sm-4">
+			<div class="col-sm-4 hidden-xs">
 
 				Links:
 				<ul>
@@ -31,7 +31,8 @@
 	        </div>
 	      </div>
 	    </div>
-	 </footer>
-	 
+	</footer>
+	
+	<script type="text/javascript"></script> 
   </body>
 </html>

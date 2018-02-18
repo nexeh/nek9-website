@@ -18,8 +18,15 @@
 	<div class="site-container">
 		<div class="header-container row">
 			<div class="header-content">
-				<div class="name"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/NEK9_logo_red.png"> New England K9 Search and Rescue</div>
-				<div class="navButtons">
+				<div class="name">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/images/NEK9_logo_red.png"/>
+				</div>
+				<span class="visible-xs name" >NEK9</span>
+				<button type="button" class="btn btn-default btn-lg visible-xs">
+				  Menu
+				</button>
+				<span class="hidden-xs name" >New England K9 Search and Rescue</span>
+				<div class="navButtons hidden-xs">
 					<?php wp_nav_menu( array( 
 						'theme_location' => 'primary', 
 						'menu_class'=> '' 
