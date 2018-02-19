@@ -223,3 +223,19 @@ html, body {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.standards {
+  background: url(images/view.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.membership {
+  background: url(images/river.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
