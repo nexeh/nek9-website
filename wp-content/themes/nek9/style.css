@@ -172,7 +172,7 @@ html, body {
 
 .skills {
   background: url(images/teambase.jpg) no-repeat center center fixed;
-  height: 500px;
+  height: 600px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -200,6 +200,24 @@ html, body {
 .support {
   background: url(images/haven.png) no-repeat center center fixed;
   height: 500px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.who {
+  background: url(images/nhng.jpg) no-repeat center center fixed;
+  height: 500px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.when {
+  background: url(images/dryriver.jpg) no-repeat center center fixed;
+  height: 600px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

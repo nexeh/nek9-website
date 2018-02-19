@@ -18,52 +18,35 @@
 
 			</div>
 
-	        <div class="col-sm-2">
+			<?php
+			//for each category, show all posts
+		    $cat_args=array(
+		        'orderby' => 'name',
+		        'order' => 'ASC'
+		    );
+		    $categories=get_categories($cat_args);
 
-				<h4>News</h4>
-				<ul>
-					<li><a href="#">Sub</a></li>
-					<li><a href="#">Page</a></li>
-					<li><a href="#">Lorem</a></li>
-					<li><a href="#">Namehere</a></li>
-					<li><a href="#">Another</a></li>
-				</ul>
+		    foreach($categories as $category) {
 
-	        </div>
-	        <div class="col-sm-2">
+		        $args=array(
+		            'category__in' => array($category->term_id),
+		        );
+		        $posts = get_posts($args);
 
-				<h4>Members</h4>
-				<ul>
-					<li><a href="#">Namehere</a></li>
-					<li><a href="#">Another</a></li>
-					<li><a href="#">Sub</a></li>
-					<li><a href="#">Page</a></li>
-					<li><a href="#">Lorem</a></li>
-				</ul>
-
-	        </div>
-	        <div class="col-sm-2">
-
-				<h4>Outreach</h4>
-				<ul>
-					<li><a href="#">Sub</a></li>
-					<li><a href="#">Page</a></li>
-					<li><a href="#">Lorem</a></li>
-					<li><a href="#">Namehere</a></li>
-					<li><a href="#">Another</a></li>
-				</ul>
-
-	        </div>
-	        <div class="col-sm-2">
-
-				<h4>Support</h4>
-				<ul>
-					<li><a href="#">Sub page name</a></li>
-					<li><a href="#">Page</a></li>
-					<li><a href="#">Lorem</a></li>
-					<li><a href="#">Namehere</a></li>
-					<li><a href="#">Another</a></li>
-				</ul>
+		        if ($posts) {
+		        	echo '<div class="col-sm-2">';
+		            echo '<h4>' . $category->name . '</h4> ';
+		            echo '<ul>';
+		            foreach($posts as $post) {
+		                setup_postdata($post); ?>
+		                <li><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
+		                <?php
+		            } // foreach($posts
+		            echo '</ul>';
+		            echo '</div>';
+		        } // if ($posts
+		    } // foreach($categories
+		    ?>
 
 	        </div>
 	        <div class="col-sm-12 text-center copyright">

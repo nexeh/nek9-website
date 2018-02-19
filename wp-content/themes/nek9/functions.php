@@ -122,6 +122,11 @@ function cptui_register_my_cpts_members() {
 // End of cptui_register_my_cpts_members()
 }
 
+add_action('get_header', 'remove_admin_login_header');
+function remove_admin_login_header() {
+	remove_action('wp_head', '_admin_bar_bump_cb');
+}
+
 
 
 
