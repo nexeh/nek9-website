@@ -80,9 +80,14 @@
 }
 
 .header-container .navButtons ul a {
-  color: white;
+    color: white;
 }
 
+@media (max-width: 768px) {
+  .header-container .navbar-collapse.navButtons {
+      background-color: black;
+  }
+}
 
 
 
@@ -162,6 +167,10 @@ html, body {
   background-size: cover;
 }
 
+.parallax-content-single {
+  padding-top: 100px;
+}
+
 .mission .parallax-content {
   padding-top: 250px;
 }
@@ -172,7 +181,6 @@ html, body {
 
 .skills {
   background: url(images/teambase.jpg) no-repeat center center fixed;
-  height: 600px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -181,7 +189,6 @@ html, body {
 
 .about {
   background: url(images/monadnock.jpg) no-repeat center center fixed;
-  height: 500px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -190,7 +197,6 @@ html, body {
 
 .outreach {
   background: url(images/outreach.jpg) no-repeat center center fixed;
-  height: 500px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -199,7 +205,6 @@ html, body {
 
 .support {
   background: url(images/haven.png) no-repeat center center fixed;
-  height: 500px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -208,7 +213,6 @@ html, body {
 
 .who {
   background: url(images/nhng.jpg) no-repeat center center fixed;
-  height: 500px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -217,7 +221,54 @@ html, body {
 
 .when {
   background: url(images/dryriver.jpg) no-repeat center center fixed;
-  height: 600px;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.join {
+  background: url(images/boat.JPG) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.honor {
+  background: url(images/river.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.memorial {
+  background: url(images/marsh.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.business {
+  background: url(images/kinley.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.standards {
+  background: url(images/rook.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.membership {
+  background: url(images/view.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
