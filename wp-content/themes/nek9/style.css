@@ -274,3 +274,19 @@ html, body {
   -o-background-size: cover;
   background-size: cover;
 }
+
+.lostproofing {
+  background: url(images/outreach.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.general {
+  background: url(images/view2.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
