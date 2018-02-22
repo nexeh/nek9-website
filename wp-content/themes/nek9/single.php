@@ -1,11 +1,13 @@
 <?php get_header(); ?>
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
-			<?php
-			while ( have_posts() ) : the_post();
-				get_template_part( 'content', get_post_format() );
-			endwhile;
-			?>
-		</main>
-	</div>
+<?php while ( have_posts() ) : the_post(); ?>
+	<?php $custom_values = get_post_meta($post->ID, 'class'); ?>
+	<div class="parallax-section <?php echo implode(" ",$custom_values); ?>">
+	    <div class="container fill-height">
+	      <div class="row fill-height parallax-content-single">
+			<?php the_content(); ?>
+	      </div>
+	    </div>
+	  </div>	
+<?php endwhile; ?>
 <?php get_footer(); ?>
+
