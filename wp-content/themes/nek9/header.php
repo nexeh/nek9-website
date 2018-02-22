@@ -15,6 +15,19 @@
 </head>
 
 <body>
+	<script type="text/javascript">
+		if(navigator.userAgent.match(/Trident\/7\./) || navigator.userAgent.match(/Trident\/6\./)) { // if IE
+	        jQuery('body').on("mousewheel", function () {
+	            // remove default behavior
+	            event.preventDefault(); 
+
+	            //scroll without smoothing
+	            var wheelDelta = event.wheelDelta;
+	            var currentScrollPosition = window.pageYOffset;
+	            window.scrollTo(0, currentScrollPosition - wheelDelta);
+	        });
+		}
+	</script>
 	<nav class="navbar navbar-default header-container">
 	  <div class="container-fluid">
 	    <div class="navbar-header header-content">
