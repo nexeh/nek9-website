@@ -155,7 +155,7 @@ html, body {
 .mission {
   background: url(images/jackson.jpg) no-repeat center center fixed;
   height: 750px;
-  font-size: 28px;
+  font-size: 1.6em;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
