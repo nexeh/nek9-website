@@ -21,6 +21,7 @@
     margin: 0;
     z-index: 1;
     border-bottom: white 5px solid;
+    overflow: hidden;
 }
 
 .header-container img {
@@ -81,6 +82,14 @@
 
 .header-container .navButtons ul a {
     color: white;
+}
+
+.header-content button {
+  margin-top: 19px;
+}
+
+.nav>li>a {
+    padding: 9px;
 }
 
 @media (max-width: 768px) {
@@ -180,7 +189,7 @@ html, body {
 }
 
 .skills {
-  background: url(images/teambase.jpg) no-repeat center center fixed;
+  background: url(images/justice.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -204,7 +213,7 @@ html, body {
 }
 
 .support {
-  background: url(images/haven.png) no-repeat center center fixed;
+  background: url(images/olive.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -212,7 +221,7 @@ html, body {
 }
 
 .who {
-  background: url(images/nhng.jpg) no-repeat center center fixed;
+  background: url(images/presidentials.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -220,7 +229,7 @@ html, body {
 }
 
 .when {
-  background: url(images/dryriver.jpg) no-repeat center center fixed;
+  background: url(images/gilford.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -228,7 +237,7 @@ html, body {
 }
 
 .join {
-  background: url(images/boat.JPG) no-repeat center center fixed;
+  background: url(images/boat.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -236,7 +245,7 @@ html, body {
 }
 
 .honor {
-  background: url(images/river.jpg) no-repeat center center fixed;
+  background: url(images/ryker.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -268,7 +277,7 @@ html, body {
 }
 
 .membership {
-  background: url(images/view.jpg) no-repeat center center fixed;
+  background: url(images/finn.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -291,16 +300,24 @@ html, body {
   background-size: cover;
 }
 
-.standards {
-  background: url(images/view.jpg) no-repeat center center fixed;
+.searches2018 {
+  background: url(images/view2.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-.membership {
-  background: url(images/river.jpg) no-repeat center center fixed;
+.searches2017 {
+  background: url(images/donna_background.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.searches2016 {
+  background: url(images/helo.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;

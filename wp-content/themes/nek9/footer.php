@@ -17,36 +17,37 @@
 				Pager: 877-730-2769 <br/>
 
 			</div>
+			<div class="col-sm-8">
+				<?php
+				//for each category, show all posts
+			    $cat_args=array(
+			        'orderby' => 'name',
+			        'order' => 'ASC'
+			    );
+			    $categories=get_categories($cat_args);
 
-			<?php
-			//for each category, show all posts
-		    $cat_args=array(
-		        'orderby' => 'name',
-		        'order' => 'ASC'
-		    );
-		    $categories=get_categories($cat_args);
+			    foreach($categories as $category) {
 
-		    foreach($categories as $category) {
+			        $args=array(
+			            'category__in' => array($category->term_id),
+			        );
+			        $posts = get_posts($args);
 
-		        $args=array(
-		            'category__in' => array($category->term_id),
-		        );
-		        $posts = get_posts($args);
-
-		        if ($posts) {
-		        	echo '<div class="col-sm-2">';
-		            echo '<h4>' . $category->name . '</h4> ';
-		            echo '<ul>';
-		            foreach($posts as $post) {
-		                setup_postdata($post); ?>
-		                <li><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
-		                <?php
-		            } // foreach($posts
-		            echo '</ul>';
-		            echo '</div>';
-		        } // if ($posts
-		    } // foreach($categories
-		    ?>
+			        if ($posts) {
+			        	echo '<div class="col-sm-2 pull-right">';
+			            echo '<h4>' . $category->name . '</h4> ';
+			            echo '<ul>';
+			            foreach($posts as $post) {
+			                setup_postdata($post); ?>
+			                <li><a href="<?php the_permalink() ?>" rel="bookmark" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a></li>
+			                <?php
+			            } // foreach($posts
+			            echo '</ul>';
+			            echo '</div>';
+			        } // if ($posts
+			    } // foreach($categories
+			    ?>
+			</div>
 
 	        </div>
 	        <div class="col-sm-12 text-center copyright">

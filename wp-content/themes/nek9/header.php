@@ -37,7 +37,8 @@
 	        <span class="icon-bar"></span>
 	        <span class="icon-bar"></span>
 	      </button>
-	      <div class="name hidden-xs"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/NEK9_logo_red.png"/>New England K9 Search and Rescue</div>
+	      <div class="name hidden-sm hidden-xs"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/NEK9_logo_red.png"/>New England K9 Search and Rescue</div>
+	      <div class="name visible-sm"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/NEK9_logo_red.png"/>New England K9</div>
 		  <div class="name visible-xs"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/NEK9_logo_red.png"/>NEK9</div>
 	    </div>
 
