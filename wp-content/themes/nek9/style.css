@@ -300,6 +300,13 @@ html, body {
   background-size: cover;
 }
 
+.searches2019 {
+  background: url(images/drone.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .searches2018 {
   background: url(images/view2.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
