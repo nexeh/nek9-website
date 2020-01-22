@@ -167,7 +167,7 @@ html, body {
 }
 
 .mission {
-  background: url(images/jackson.jpg) no-repeat center center fixed;
+  background: url(images/mission.jpg) no-repeat center center fixed;
   height: 750px;
   font-size: 1.6em;
   -webkit-background-size: cover;
@@ -196,8 +196,8 @@ html, body {
   background-size: cover;
 }
 
-.about {
-  background: url(images/monadnock.jpg) no-repeat center center fixed;
+.history {
+  background: url(images/history.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -212,16 +212,16 @@ html, body {
   background-size: cover;
 }
 
-.support {
-  background: url(images/olive.jpg) no-repeat center center fixed;
+.donate {
+  background: url(images/donate.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
 
-.who {
-  background: url(images/presidentials.jpg) no-repeat center center fixed;
+.agencies {
+  background: url(images/agencies.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -237,7 +237,7 @@ html, body {
 }
 
 .join {
-  background: url(images/boat.jpg) no-repeat center center fixed;
+  background: url(images/join.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -276,8 +276,8 @@ html, body {
   background-size: cover;
 }
 
-.membership {
-  background: url(images/finn.jpg) no-repeat center center fixed;
+.trainee {
+  background: url(images/trainee.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -299,7 +299,13 @@ html, body {
   -o-background-size: cover;
   background-size: cover;
 }
-
+.searches2020 {
+  background: url(images/moultonboro.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .searches2019 {
   background: url(images/drone.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;

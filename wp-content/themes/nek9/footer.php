@@ -16,8 +16,9 @@
 				Phone: 603-526-6754<br/>
 				Pager: 877-730-2769 <br/>
 				<br>
-				<a href="https://www.facebook.com/nek9sar/"><img src="http://jeremycorson.com/nek9development/wp-content/themes/nek9/images/icon-faceboook.gif" alt="Facebook" style="width:30px;height:30px;" ></a>
-				<a href="https://www.youtube.com/channel/UC-pWNJnDTN3a3K8_4DPqm-w"><img src="http://jeremycorson.com/nek9development/wp-content/themes/nek9/images/icon-you-tube.gif" alt="YouTube" style="width:30px;height:30px;" ></a>
+				<a href="https://www.facebook.com/nek9sar/" target="_blank"><img src="http://nek9sar.org/wp-content/themes/nek9/images/icon-faceboook.gif" alt="Facebook Link" style="width:30px;height:30px;" ></a>
+				<a href="https://www.youtube.com/channel/UC-pWNJnDTN3a3K8_4DPqm-w" target="_blank"><img src="http://nek9sar.org/wp-content/themes/nek9/images/icon-you-tube.gif" alt="YouTube Link" style="width:30px;height:30px;" ></a>
+				<a href="https://www.instagram.com/nek9sar/" target="_blank"><img src="http://nek9sar.org/wp-content/themes/nek9/images/icon-instagram.jpg" alt="Instagram Link" style="width:30px;height:30px;" ></a>
 
 			</div>
 			<div class="col-sm-8">
