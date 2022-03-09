@@ -299,6 +299,20 @@ html, body {
   -o-background-size: cover;
   background-size: cover;
 }
+.searches2022 {
+  background: url(images/search_background_2022.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.searches2021 {
+  background: url(images/fall.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .searches2020 {
   background: url(images/moultonboro.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
